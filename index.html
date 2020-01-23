@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Componentes Bootstrap</title>
+  <style>
+    .titulo{
+      text-align: center;
+      background-color: #563d7c;
+      color: white;
+      border: 3px black solid;
+      border-radius: 15px;
+      height: 75px;
+    }
+
+    .conteudo{
+      font-size: 1.5rem;
+    }
+
+    /* .carousel-indicators{
+      background-color: #563d7c;
+    } */
+
+    #root{
+      /* background-color: #34ed94; */
+      margin-top: 20px;
+    }
+    .carousel{
+      height: 600px;
+    }
+    .carousel-item{
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    .carousel-control-prev-icon {
+       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230e0024' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230e0024' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+
+    .carousel-indicators {
+      top: 50px;
+      justify-content:flex-start;
+      margin:0;
+      padding-left:15px;
+      padding-right:15px;
+    }
+
+    .carousel-indicators li {
+      width: 20px;
+      height: 20px;
+      /* border-radius: 100%; */
+    }
+
+    .carousel-indicators li:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    #bootstrap-logo{
+      width: 400px;
+      height: 400px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+  <!-- root -->
+  <div class="container" id="root">
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <h1 class="titulo">
+              Componentes Bootstrap
+            </h1>
+            <img id="bootstrap-logo" src="bootstrap-logo.png" alt="bootstrap logo" />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <h1 class="titulo">
+              Carousel
+            </h1>
+            <p class="conteudo">Mostra elementos - imagens ou texto - como slides.</p>
+            <ul class="conteudo">
+              <li>Apresentação de imagens, vantagens de um produto, opinião de consumidores, etc</li>
+              <li>Controles de próximo/anterior</li>
+              <li>Indicadores para qualquer slide</li>
+              <li>Intervalo entre slides</li>
+            </ul>
+            <script src="https://gist.github.com/jeffersondenilson/682638458a26955924ceffd04b81abd1.js"></script>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- carousel -->
+  </div>
+  <!-- root -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
