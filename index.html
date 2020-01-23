@@ -19,9 +19,11 @@
       font-size: 1.5rem;
     }
 
-    /* .carousel-indicators{
-      background-color: #563d7c;
-    } */
+    .carousel-indicators{
+      /* background-color: #563d7c; */
+      /* opacity: 0.5; */
+      margin: 530px;
+    }
 
     #root{
       /* background-color: #34ed94; */
@@ -41,7 +43,7 @@
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230e0024' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
     }
 
-    .carousel-indicators {
+    /* .carousel-indicators {
       top: 50px;
       justify-content:flex-start;
       margin:0;
@@ -52,12 +54,11 @@
     .carousel-indicators li {
       width: 20px;
       height: 20px;
-      /* border-radius: 100%; */
     }
 
     .carousel-indicators li:not(:last-child) {
       margin-right: 20px;
-    }
+    } */
 
     #bootstrap-logo{
       width: 400px;
@@ -72,11 +73,18 @@
   <div class="container" id="root">
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
       </ol>
+
       <div class="carousel-inner">
+        
         <div class="carousel-item active">
           <div class="container">
             <h1 class="titulo">
@@ -85,6 +93,7 @@
             <img id="bootstrap-logo" src="bootstrap-logo.png" alt="bootstrap logo" />
           </div>
         </div>
+
         <div class="carousel-item">
           <div class="container">
             <h1 class="titulo">
@@ -100,6 +109,130 @@
             <script src="https://gist.github.com/jeffersondenilson/682638458a26955924ceffd04b81abd1.js"></script>
           </div>
         </div>
+
+        <div class="carousel-item">
+            <div class="container">
+                <h1 class="titulo">
+                    Botão
+                </h1>
+                <!-- <p class="conteudo"></p> -->
+                <ul class="conteudo">
+                    <li>Utilizado para personalizar ações em formulários, diálogos e outras coisas</li>
+                    <li>Existem uma variedade de estilos de botões pré-definidos</li>
+                </ul>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <a class="btn btn-primary" href="#" role="button">Link</a>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-primary btn-lg">Botão grande</button>
+                <button type="button" class="btn btn-primary btn-sm">Botão pequeno</button>
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Botão block-level</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container">
+                <h1 class="titulo">
+                    Alert
+                </h1>
+                <p class="conteudo">Fornece uma mensagem de feedback para ações típicas do usuário.</p>
+                <ul class="conteudo">
+                    <li>Reportar algum erro</li>
+			        <li>Passar alguma informação para o usuário</li>
+			        <li>Chamar atenção do usuário para alguma informação</li>
+                </ul>
+                <div class="alert alert-primary"> um alerta primário</div> <!-- link para o alert primary -->
+                <div class="alert alert-secondary"> um alerta secundário</div> <!-- link para o alert secondary -->
+                <div class="alert alert-success" > um alerta de sucesso</div> <!-- link para o alert sucess -->
+                <div class="alert alert-warning"> um alerta de aviso</div> <!-- link para o alert warning  -->
+                <div class="alert alert-danger"> um alerta de perigo</div> <!-- link para o alert darger -->
+                <div class="alert alert-info"> um alerta de informação</div> <!-- link para o alert information -->
+                <div class="alert alert-dark"> um alerta sombrio</div> <!-- link para o alerta dark --> 
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container">
+                <h1 class="titulo">
+                    Navbar
+                </h1>
+                <p class="conteudo"></p>
+                <ul class="conteudo">
+                </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                    </nav>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container">
+                <h1 class="titulo">
+                    Table
+                </h1>
+                <p class="conteudo"></p>
+                <ul class="conteudo">
+                    <!-- <li></li> -->
+                </ul>
+                    <div class="table-responsive">          
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nomes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Carlos</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Igor</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+            </div>
+        </div>
+
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
